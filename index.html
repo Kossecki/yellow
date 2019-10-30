@@ -13,14 +13,34 @@
       href="https://fonts.googleapis.com/css?family=Abel&display=swap"
       rel="stylesheet"
     />
-    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
 
   <body>
     <main>
+      <header class="header">
+        <div class="container">
+          
+          <div class="header-logo">
+            <img src="marca_corte.svg" alt="">
+          </div>
+
+          <div class="column">
+            <h1 class="header-title">Wake the design</h1>
+          </div>
+          
+          <div class="column column-two-thirds header-content">
+            <p class="header-text white-text ">Sed ante alios, Ceae pulcherrime gentis, gratus erat, Cyparisse, tibi: tu pabula cervum ad nova, tu liquidi ducebas fontis ad undam, tu modo
+            texebas varios per cornua flores.</p>
+            <a href="#" class="button button-dark button-auto-width">Who are we?</a>
+          </div>
+        </div>
+      </header>
       <div class="quote">
         <div class="container">
-          <div class="column column-five-sixths">
+          <div class="column block-centered column-five-sixths">
             <p>
               “Donec rutrum congue leo eget malesuada. Vivamus magna justo,
               lacinia eget consectetur sed, convallis at tellus. Praesent sapien
@@ -31,7 +51,7 @@
       </div>
       <div class="services">
         <div class="container">
-          <div class="column column-third">
+          <div class="column block-centered column-third margin-bottom-standard">
             <div class="shape shape-design"></div>
             <h4>Design</h4>
             <p>
@@ -39,14 +59,14 @@
               interpretaris sit ex vivendum ullamcorper et his.
             </p>
           </div>
-          <div class="column column-third">
+          <div class="column block-centered column-third margin-bottom-standard">
             <div class="shape shape-coding"></div>
             <h4>Coding</h4>
             <p>
               Soluta consequat no has. Has ex deleniti consulatu, tamquam.
             </p>
           </div>
-          <div class="column column-third">
+          <div class="column block-centered column-third margin-bottom-standard">
             <div class="shape shape-apps"></div>
             <h4>Apps</h4>
             <p>
@@ -54,31 +74,193 @@
               interpretaris sit ex vivendum ullamcorper et his.
             </p>
           </div>
-          <div class="column column-third">
+          <div class="column block-centered column-third margin-bottom-standard">
             <a href="#" class="button">Launch project</a>
           </div>
         </div>
       </div>
       <div class="stats">
         <ul class="container">
-          <li class="column column-quarter icon icon-projects">
+          <li class="column block-centered column-quarter stats-column icon icon-projects">
             <b>345</b>
             <span>completed projects</span>
           </li>
-          <li class="column column-quarter icon icon-coffee">
+          <li class="column block-centered column-quarter stats-column icon icon-coffee">
             <b>983</b>
             <span>cups of coffee drunk</span>
           </li>
-          <li class="column column-quarter icon icon-emails">
+          <li class="column block-centered column-quarter stats-column icon icon-emails">
             <b>478</b>
             <span>emails sent</span>
           </li>
-          <li class="column column-quarter icon icon-awards">
+          <li class="column block-centered column-quarter stats-column icon icon-awards">
+            <div class="stats-shape awards"></div>
             <b>48</b>
             <span>awards won</span>
           </li>
         </ul>
       </div>
+  
+      <div class="container portfolio">
+        <div class="column column-five-sixths">
+          <h4>Works so far&hellip;</h4>
+          <p>
+            Congue leo eget malesuada. Vivamus magna justo, lacinia eget
+            consectetur sed, convallis at tellus. Praesent sapien massa, convallis
+            a pellentesque nec, egestas non nisi.
+          </p>
+        </div>
+        <nav class="column block-centered column-two-thirds">
+          <ul class="portfolio-navigation">
+            <li class="navigation-item"><a href="#" class="navigation-link active">All</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link">Design</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link">Code</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link">Photography</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link">Apps</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="container works-fullscreen">
+          <div class="column1 picture picture-one"></div>
+          <div class="column2">
+            <div class="level">
+              <div class="super">
+              <h4 class="supertitle">Super Awesome Work</h4>
+              <p class="supertext">
+                Congue leo eget malesuada. Vivamus magna justo, lacinia eget
+                consectetur sed, convallis at tellus. Praesent sapien massa, convallis
+                a pellentesque nec, egestas non nisi.
+              </p>
+              <a class="superlink" href="#">View More</a>
+              </div>
+              <div class="first-level-one picture picture-two"></div>
+            </div>
+            <div class="level">
+              <div class="second-level-one picture picture-three"></div>
+              <div class="second-level-two picture picture-four"></div>
+              <div class="second-level-three picture picture-five"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="superbackground container works notfullscreen">
+            <div class=" column column-five-sixths">
+                <h4 class="supertitle">Super Awesome Work</h4>
+                <p class="supertext">
+                  Congue leo eget malesuada. Vivamus magna justo, lacinia eget
+                  consectetur sed, convallis at tellus. Praesent sapien massa, convallis
+                  a pellentesque nec, egestas non nisi.
+                </p>
+                <a class="superlink" href="#">view more</a>
+            </div>
+          </div>
+            <div class="awesome container">
+              <div class="box picture picture-one"></div>
+              <div class="box picture picture-two"></div>
+              <div class="box picture picture-three"></div>
+              <div class="box picture picture-four"></div>
+              <div class="box picture picture-five"></div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="column block-centered column-third margin-bottom-standard">
+            <a href="#" class="button button-bottom-space">Load more projects</a>
+          </div>
+        </div>
+
+      <div class="clients">
+        <div class="container">
+          <div class="column column-five-sixth">
+            <h4>Our clients...</h4>
+            <p class="white-text">
+                Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+            </p>
+          </div>
+            <div class="column block-centered column-quarter"><img src="com.svg" alt=""></div>
+            <div class="column block-centered column-quarter"><img src="voigtlander.svg" alt=""></div>
+            <div class="column block-centered column-quarter"><img src="hok.svg" class="clients-logo_margin" alt=""></div>
+            <div class="column block-centered column-quarter"><img src="sumop.svg" class="clients-logo_margin" alt=""></div>
+        </div>
+      </div>
+
+      <div class="contact">
+          <div class="container">
+            <div class="column column-five-sixth">
+              <h4>Contact us&hellip;</h4>
+              <p>
+                Congue leo eget malesuada. Vivamus magna justo, lacinia eget
+                consectetur sed, convallis at tellus. Praesent sapien massa, convallis
+                a pellentesque nec, egestas non nisi.
+              </p>
+            </div>
+          </div>
+
+          <form method="POST" action="/">
+            <div class="container">
+              <div class="column contact-form column-five-sixths block-centered">
+                <div class="contact-form-field field-name ">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" placeholder="" id="name" required>
+                </div>
+                <div class="contact-form-field">
+                  <label for="mail">Mail</label>
+                  <input type="email" name="email" id="mail" value="" required>
+                </div>
+                <div class="contact-form-field">
+                  <label for="subject">Subject</label>
+                  <input type="text" name="subject" id="subject">
+                </div>
+                <div class="contact-form-field">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message"></textarea>
+                </div>
+              </div>
+              <div class="column column-third margin-bottom-standard block-centered">
+                <button class="button">Send</button>
+              </div>
+            </div>
+          </form>
+
+        <div class="get-in-touch">
+          <div class="container">
+              <div class="column column-third column-get-in-touch block-centered">
+                <div class="get-in-touch_card">
+                  <a class="contact-icon" href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i></a>
+                  <p>847-939-9359</p>
+                </div>
+              </div>
+              <div class="column column-third column-get-in-touch block-centered">
+                  <div class="get-in-touch_card">
+                    <a class="contact-icon" href="#"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a>
+                    <p>montreal@mail.com</p>
+                  </div>
+              </div>
+              <div class="column column-third column-get-in-touch block-centered">
+                  <div class="get-in-touch_card">
+                    <a class="contact-icon" href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                    <p>4116 Oak Avenue, Chicago, IL 60607</p>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <footer class="footer_black">
+        <div class="container">
+          <div class="column block-centered column-five-sixths">
+            <p class="footer-text white-text">© 2016 - <span class="yellow-text">Montreal</span> All Right Reserved</p>
+            <a class="footer-icon" href="#"><i class="fa fa-facebook" aria-hidden="true" href="#"></i></a>
+            <a class="footer-icon" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="footer-icon" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            <a class="footer-icon" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a class="footer-icon" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </footer>
+
     </main>
   </body>
 
