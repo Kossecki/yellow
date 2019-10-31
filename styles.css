@@ -12,14 +12,14 @@ body {
   font-family: "Abel", sans-serif;
 }
 /*
- main {
+.all {
   background-image: url("tmp/Montreal_design_grid.png");
   background-position-x: 50%;
   background-position-y: 14px;
   background-repeat: no-repeat;
 }
 
-main > *{
+.all > *{
   mix-blend-mode: exclusion;
 }
 */
