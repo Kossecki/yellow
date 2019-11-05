@@ -123,11 +123,11 @@ button {
     padding: 0;
 }
 
-@media (min-width: 26rem) {
+/* @media (min-width: 26rem) {
     .container {
         display: flex;
     }
-}
+} */
 
 .column {
     padding-left: 15px;
@@ -325,7 +325,7 @@ h4 {
 .active {
     background-color: #ffda00;
 }
-
+/* 
 .works-fullscreen {
     background-color: #181a1f;
     max-width: 120rem;
@@ -336,12 +336,20 @@ h4 {
     .works-fullscreen {
         display: none;
     }
-}
+} */
 
-.picture {
+/* .picture {
     background-repeat: no-repeat;
     background-size: cover;
 }
+ */
+
+ .workimage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
 
 .picture-one {
     background-image: url("https://images.unsplash.com/photo-1511139606738-c41179bb2193?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
@@ -405,7 +413,7 @@ h4 {
 .second-level-three {
     flex-basis: 35.2%;
 }
-.picture-three {
+/* .picture-three {
     background-image: url("https://images.unsplash.com/photo-1528688636434-e8f5f163a05e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
 }
 .picture-four {
@@ -413,19 +421,60 @@ h4 {
 }
 .picture-five {
     background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
-}
-.notfullscreen {
+} */
+/* .works-notfullscreen {
     display: none;
 }
-@media (max-width: 75em) {
-    .notfullscreen {
+@media (max-width: 75em) { */
+/*     .works-notfullscreen {
         display: block;
+    } */
+
+    .works {
+        justify-content: center;
     }
 
+
+    @media(min-width: 900px){
+        .grid {
+            display: grid;
+            grid-template-columns: 26% 26% 10% 12% 26%;
+            grid-template-rows: 50% 50%;
+        }
+    
+    .one{
+        grid-area: 1 / 1 / 3 / 2;
+    }
     .superbackground {
+        grid-area: 1 / 2 / 2 / 4;
         background-color: #ffda00;
         padding: 3rem 0;
     }
+
+    .two {
+        grid-area: 1 / 4 / 2 / 6;
+        background-color: aquamarine;
+    }
+
+    .three{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .four {
+        grid-area: 2 / 3 / 3 / 5;
+    }
+
+    .five {
+        grid-area: 2 / 5 / 3 / 6;
+    }
+}
+
+
+.superbackground {
+    background-color: #ffda00;
+    padding: 3rem 0;
+}
+
 
     .supertitle {
         padding-left: 1rem;
