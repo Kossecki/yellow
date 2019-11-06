@@ -11,8 +11,8 @@ html {
 body {
     font-family: "Abel", sans-serif;
 }
-/*
-.all {
+
+/* .all {
   background-image: url("tmp/Montreal_design_grid.png");
   background-position-x: 50%;
   background-position-y: 14px;
@@ -22,8 +22,7 @@ body {
 .all > *{
   mix-blend-mode: exclusion;
 }
-*/
-
+ */
 button {
     width: 100%;
 }
@@ -123,11 +122,9 @@ button {
     padding: 0;
 }
 
-/* @media (min-width: 26rem) {
-    .container {
-        display: flex;
-    }
-} */
+.container-wide {
+    max-width: 1920px;
+}
 
 .column {
     padding-left: 15px;
@@ -325,31 +322,12 @@ h4 {
 .active {
     background-color: #ffda00;
 }
-/* 
-.works-fullscreen {
-    background-color: #181a1f;
-    max-width: 120rem;
-    max-height: 56.25rem;
-    margin-bottom: 5.2rem;
-}
-@media (max-width: 75em) {
-    .works-fullscreen {
-        display: none;
-    }
-} */
-
-/* .picture {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
- */
 
  .workimage {
     width: 100%;
     height: 100%;
     object-fit: cover;
  }
-
 
 .picture-one {
     background-image: url("https://images.unsplash.com/photo-1511139606738-c41179bb2193?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
@@ -373,11 +351,6 @@ h4 {
     height: 28.125rem;
 }
 
-.super {
-    max-width: 48.6%;
-    background-color: #ffda00;
-}
-
 .supertitle {
     color: #181a1f;
     font-size: 1.875rem;
@@ -399,7 +372,7 @@ h4 {
     letter-spacing: 0.094rem;
     margin-left: 5.6rem;
     padding: 0.5rem 2.2rem;
-    border: 1px solid #181a1f;
+    border: 1px solid#ffffff;
 }
 .first-level-one {
     flex-basis: 51.4%;
@@ -413,22 +386,6 @@ h4 {
 .second-level-three {
     flex-basis: 35.2%;
 }
-/* .picture-three {
-    background-image: url("https://images.unsplash.com/photo-1528688636434-e8f5f163a05e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
-}
-.picture-four {
-    background-image: url("https://images.unsplash.com/photo-1512073540355-8b5948adb878?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
-}
-.picture-five {
-    background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
-} */
-/* .works-notfullscreen {
-    display: none;
-}
-@media (max-width: 75em) { */
-/*     .works-notfullscreen {
-        display: block;
-    } */
 
     .works {
         justify-content: center;
@@ -438,8 +395,8 @@ h4 {
     @media(min-width: 900px){
         .grid {
             display: grid;
-            grid-template-columns: 26% 26% 10% 12% 26%;
-            grid-template-rows: 50% 50%;
+            grid-template-columns: 13fr 13fr 5fr 6fr 13fr;
+            grid-template-rows: 1fr 1fr;
         }
     
     .one{
@@ -453,7 +410,6 @@ h4 {
 
     .two {
         grid-area: 1 / 4 / 2 / 6;
-        background-color: aquamarine;
     }
 
     .three{
@@ -474,7 +430,9 @@ h4 {
     background-color: #ffda00;
     padding: 3rem 0;
 }
-
+.superspace-around {
+    padding: 2rem;
+}
 
     .supertitle {
         padding-left: 1rem;
