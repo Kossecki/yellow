@@ -14,7 +14,7 @@
 
     <body>
         <div class="all">
-            <main role="main">
+            <main role="main" id="main">
                 <header class="header" role="banner">
                     <div class="container">
                         <div class="header-logo">
@@ -117,23 +117,19 @@
                         </nav>
                     </div>
 
-                    <article class="container container-wide">
+                    <article class="container container-wide" id="article">
                         <div class="grid">
                             <div class="project">
-                                    <h4 class="project-title">Super Awesome Work</h4>
-                                    <p class="white-text">
-                                        Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
-                                        convallis at tellus. Praesent sapien massa, convallis a pellentesque nec,
-                                        egestas non nisi.
-                                    </p>
-                                    <a class="project-link" href="#">view more</a>
+                                <h4 class="project-title">Super Awesome Work</h4>
+                                <p class="white-text">
+                                    Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed,
+                                    convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas
+                                    non nisi.
+                                </p>
+                                <a class="project-link" href="#">view more</a>
                             </div>
                             <div class="one">
-                                <img
-                                    src="https://source.unsplash.com/kV9h5fy6vCI/500x900"
-                                    alt=""
-                                    class="workimage"
-                                />
+                                <img src="https://source.unsplash.com/kV9h5fy6vCI/500x900" alt="" class="workimage" />
                             </div>
                             <div class="two">
                                 <img src="https://source.unsplash.com/Px3iBXV-4TU/730x450" alt="" class="workimage" />
@@ -152,7 +148,7 @@
 
                     <div class="container">
                         <div class="column block-centered column-third margin-bottom-standard">
-                            <a href="#" class="button button-bottom-space">Load more projects</a>
+                            <a href="#" class="button button-bottom-space" id="load-work">Load more projects</a>
                         </div>
                     </div>
                 </section>
@@ -261,5 +257,6 @@
                 </div>
             </footer>
         </div>
+        <script type="text/javascript" src="load-work.js"></script>
     </body>
 </html>
