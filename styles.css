@@ -328,12 +328,7 @@ h4 {
 
 .project {
     background-color: #ffda00;
-}
-.project-space-around {
-    padding-top: 6rem;
-    padding-left: 4.4rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding: 15% 10%;
 }
 
 .workimage {
@@ -352,7 +347,6 @@ h4 {
 
 .project-link {
     margin-top: 3rem;
-    margin-bottom: 2rem;;
     width: 11rem;
     text-align: center;
     display: block;
