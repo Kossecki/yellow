@@ -37,6 +37,7 @@ button {
     letter-spacing: 0.079rem;
     text-transform: uppercase;
     text-decoration: none;
+    background-color: #ffffff;
     border: 1px solid #ffda00;
     border-radius: 4rem;
 }
