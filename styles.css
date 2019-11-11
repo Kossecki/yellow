@@ -175,7 +175,7 @@ button {
     margin-bottom: 3rem;
 }
 
-.block-centered {
+.column-centered {
     margin-right: auto;
     margin-left: auto;
 }
@@ -477,25 +477,27 @@ button {
   }
 } */
 
-/* Get in touch */
-.get-in-touch {
+
+/* Contact options */
+
+.contact-options {
     background-color: #ffda00;
     padding-top: 4.2rem;
     padding-bottom: 4.2rem;
 }
 
-.column-get-in-touch {
+.contact-options-column {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
 @media (max-width: 1322px) {
-    .column-get-in-touch {
+    .column-contact-options{
         max-width: 100%;
     }
 }
 
-.get-in-touch_card {
+.contact-options-card {
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -505,14 +507,13 @@ button {
 }
 
 @media (min-width: 1596px) {
-    .get-in-touch_card {
+    .contact-options-card {
         flex-direction: row;
         text-align: left;
     }
 }
 
-.contact-icon,
-.social-icon {
+.contact-options-icon {
     display: block;
     flex-shrink: 0;
     width: 5rem;
@@ -529,8 +530,7 @@ button {
 }
 
 @media (min-width: 1596px) {
-    .contact-icon,
-    .social-icon {
+    .contact-options-icon {
         margin-right: 1.6rem;
         margin-bottom: 0;
     }
@@ -538,7 +538,7 @@ button {
 
 /* Footer */
 
-.footer_black {
+.footer{
     background-color: #17191e;
     text-align: center;
     padding-top: 7.3rem;
