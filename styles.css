@@ -251,26 +251,12 @@ h4 {
     letter-spacing: 0.071rem;
 }
 
+
+/* Statistics */
 .stats,
 .clients {
     background-color: #17191e;
     padding: 5rem 0 0;
-}
-
-.stats b {
-    color: #ffffff;
-    font-size: 3.75rem;
-    font-weight: 400;
-    margin-bottom: 2.4rem;
-    display: block; /* pridal dan*/
-}
-
-.stats span {
-    /* to class nebo nechat */
-    font-size: 1.25rem;
-    color: #ffdb00;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
 }
 
 .stats-column {
@@ -282,7 +268,22 @@ h4 {
     text-align: center;
 }
 
-.icon {
+.stats b {
+    color: #ffffff;
+    font-size: 3.75rem;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+    display: block;
+}
+
+.stats-span {
+    font-size: 1.25rem;
+    color: #ffdb00;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.stats-icon {
     padding-top: 5.6rem;
     background-repeat: no-repeat;
     background-position: 50% 0;
