@@ -12,11 +12,6 @@ body {
     font-family: "Abel", sans-serif;
 }
 
-.text-white {
-    color: #ffffff;
-}
-
-
 /*  .all {
   background-image: url("tmp/Montreal_design_grid.png");
   background-position-x: 50%;
@@ -44,6 +39,8 @@ button {
     display: block;
     margin-top: 2.3rem;
     margin-bottom: 3.3rem;
+    border: 1px solid #ffda00;
+    border-radius: 4rem;
     padding: 1.5rem 2rem;
     text-align: center;
     font-size: 1.063rem;
@@ -51,8 +48,6 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ffffff;
-    border: 1px solid #ffda00;
-    border-radius: 4rem;
 }
 
 @media (min-width: 460px) {
@@ -62,7 +57,7 @@ button {
     }
 }
 
-.button-auto-width {
+.button-width-auto {
     width: auto;
     display: inline-block;
 }
@@ -88,14 +83,15 @@ button {
 }
 
 .header-title {
+    margin-bottom: 0.65rem;
+    margin-top: 2rem;
     font-size: 5rem;
     font-weight: 300;
     color: #ffda00;
+    background-color: #17191e;
     text-transform: uppercase;
     line-height: 1.05;
     letter-spacing: 0.085em;
-    margin-bottom: 0.65rem;
-    margin-top: 2rem;
 }
 
 @media (min-width: 630px) {
@@ -123,6 +119,7 @@ button {
 /* Quote */
 .quote {
     background-color: #ffda00;
+    color: #17191e;
     padding-top: 5.6rem;
     padding-bottom: 5.6rem;
     text-align: center;
@@ -184,10 +181,6 @@ button {
     }
 }
 
-.margin-bottom-standard {
-    margin-bottom: 3rem;
-}
-
 .column-centered {
     margin-right: auto;
     margin-left: auto;
@@ -196,7 +189,7 @@ button {
 .services {
     padding-top: 7.5rem;
     padding-bottom: 1.5rem;
-    background: white;
+    background-color: #ffffff;
 }
 
 p,
@@ -211,42 +204,43 @@ a {
 }
 
 h4 {
+    margin-top: 0;
+    margin-bottom: 1.7rem;
     color: #ffdb00;
     font-size: 3.125rem;
     font-weight: 400;
     line-height: 1.53;
     text-transform: uppercase;
     letter-spacing: 0.234rem;
-    margin-top: 0;
-    margin-bottom: 1.7rem;
 }
 
 /* Services */
-.services-shape {
+.services-item {
     width: 4.813rem;
     height: 4.813rem;
-    background-color: #ffda00;
     margin-bottom: 1.8rem;
+    background-color: #ffda00;
     background-size: 27px 26px;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
-.shape-design {
+.services-design {
     background-image: url("pencil-black.svg");
 }
 
-.shape-coding {
+.services-coding {
     background-image: url("plug.svg");
 }
 
-.shape-apps {
+.services-apps {
     background-image: url("screen.svg");
 }
 
 .services p {
     /*width: 22.75rem;*/
     color: #181a1f;
+    background-color: #ffffff;
     font-weight: 400;
     /* Text style for "Soluta con" */
     letter-spacing: 0.071rem;
@@ -269,41 +263,43 @@ h4 {
     text-align: center;
 }
 
-.stats b {
+.stats-number {
+    display: block;
+    margin-bottom: 2.4rem;
     color: #ffffff;
+    background-color: #17191e;
     font-size: 3.75rem;
     font-weight: 400;
-    margin-bottom: 2.4rem;
-    display: block;
 }
 
-.stats-span {
+.stats-text {
     font-size: 1.25rem;
     color: #ffdb00;
+    background-color: #17191e;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
-.stats-icon {
+.stats-item {
     padding-top: 5.6rem;
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: 50px 50px;
 }
 
-.icon-projects {
+.stats-projects {
     background-image: url("bag.svg");
 }
 
-.icon-coffee {
+.stats-coffee {
     background-image: url("cup.svg");
 }
 
-.icon-emails {
+.stats-emails {
     background-image: url("pencil.svg");
 }
 
-.icon-awards {
+.stats-awards {
     background-image: url("heart.svg");
 }
 
@@ -318,23 +314,23 @@ h4 {
     list-style: none;
     margin-top: 6.5rem;
     margin-bottom: 6.5rem;
-    padding: 0;
     margin-left: -15px;
     margin-right: -15px;
+    padding: 0;
 }
 .portfolio-navigation-item {
+    display: block;
+    margin: 0.5rem;
     text-decoration: none;
     list-style: none;
-    margin: 0.5rem;
-    display: block;
 }
 
 .portfolio-navigation-link {
-    text-decoration: none;
+    display: block;
+    padding: 0.5rem 2.5rem;
     padding: 0.5rem 2.5rem;
     border: 2px solid #ffda00;
-    padding: 0.5rem 2.5rem;
-    display: block;
+    text-decoration: none;
 }
 
 .active {
@@ -367,22 +363,24 @@ h4 {
 
 .project-title {
     color: #181a1f;
+    background-color: #ffda00;
     font-size: 1.875rem;
     letter-spacing: 0.141rem;
     text-transform: none;
 }
 
 .project-link {
-    margin-top: 3rem;
-    width: 11rem;
-    text-align: center;
     display: block;
-    text-decoration: none;
-    color: #181a1f;
-    line-height: 1.8;
-    letter-spacing: 0.094rem;
+    margin-top: 3rem;
     padding: 0.5rem 2.2rem;
     border: 1px solid#ffffff;
+    width: 11rem;
+    text-align: center;
+    text-decoration: none;
+    color: #181a1f;
+    background-color: #ffda00;
+    line-height: 1.8;
+    letter-spacing: 0.094rem;
 }
 
 @media (min-width: 900px) {
@@ -423,7 +421,7 @@ h4 {
     padding-top: 6rem;
 }
 
-.clients-logo_margin {
+.clients-logo-smaller {
     margin: 2rem;
 }
 
@@ -474,21 +472,26 @@ textarea {
     font-size: 1.25rem;
 }
 
+textarea {
+    height: 40vh;
+}
+
+@media (min-width: 600px) {
+    textarea {
+        height: auto;
+    }
+}
+
+
 label {
     margin-bottom: 0.5rem;
 }
 
 input,
 textarea {
+    margin-bottom: 1.5rem;
     border: 2px solid #17191e;
     padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-@media (max-width: 600px) {
-    textarea {
-        height: 40vh;
-    }
 }
 
 /* Contact options */
@@ -499,24 +502,19 @@ textarea {
     padding-bottom: 4.2rem;
 }
 
-.contact-options-column {
+.column-contact-options {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
-@media (max-width: 1322px) {
-    .column-contact-options {
-        max-width: 100%;
-    }
-}
 
 .contact-options-card {
-    flex-grow: 1;
     display: flex;
-    align-items: center;
-    margin: 2.3rem 2.8rem;
     flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
     text-align: center;
+    margin: 2.3rem 2.8rem;
 }
 
 @media (min-width: 1596px) {
@@ -564,13 +562,23 @@ textarea {
 }
 
 .footer-icon {
-    color: white;
-    margin: 0 0.35rem 1rem;
     display: inline-block;
-    font-size: 1.2rem;
+    margin: 0 0.35rem 1rem;
     width: 2.4rem;
+    color: white;
+    background-color: #17191e;
+    font-size: 1.2rem;
 }
 
 .footer-text-yellow {
     color: #ffda00;
+}
+
+/* Utilities */
+.margin-bottom-standard {
+    margin-bottom: 3rem;
+}
+
+.text-white {
+    color: #ffffff;
 }
