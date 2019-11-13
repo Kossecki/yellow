@@ -217,7 +217,9 @@ button {
     color: #181a1f;
 }
 
-.services-item{
+.services-item::before {
+    content:" ";
+    display: block;
     width: 4.813rem;
     height: 4.813rem;
     margin-bottom: 1.8rem;
@@ -226,34 +228,21 @@ button {
     background-repeat: no-repeat;
     background-position: 50%;
 }
-/* 
-.services-item::before{
-    content:url("pencil-black.svg");
-    display: block;
-    width: 4.813rem;
-    height: 4.813rem;
-    margin-bottom: 1.8rem;
-    background-color: #ffda00;
-} */
 
-.services-item-design {
+.services-item-design::before {
     background-image: url("pencil-black.svg");
 }
 
-.services-item-coding {
+.services-item-coding::before {
     background-image: url("plug.svg");
 }
 
-.services-item-apps {
+.services-item-apps::before {
     background-image: url("screen.svg");
 }
 
 .services-text {
-    /*width: 22.75rem;*/
-    /* Text style for "Soluta con" */
-/*     letter-spacing: 0.071rem; */
     letter-spacing: 0.05325em;
-
 }
 
 
