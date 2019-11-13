@@ -309,10 +309,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 6.5rem;
-    margin-bottom: 6.5rem;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin: 6.5rem -15px;
     padding: 0;
 }
 .portfolio-navigation-item {
