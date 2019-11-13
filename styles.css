@@ -378,7 +378,7 @@ button {
 }
 
 @media (min-width: 900px) {
-    .project-grid {
+    .project-list-item {
         display: grid;
         grid-template-columns: 13fr 13fr 5fr 6fr 13fr;
         grid-template-rows: 1fr 1fr;
