@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: "Abel", sans-serif;
+    font-weight: 400;
 }
 
 /*  .all {
@@ -44,7 +45,7 @@ button {
     padding: 1.5rem 2rem;
     text-align: center;
     font-size: 1.063rem;
-    letter-spacing: 0.079rem;
+    letter-spacing: 0.0743em;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ffffff;
@@ -186,12 +187,6 @@ button {
     margin-left: auto;
 }
 
-.services {
-    padding-top: 7.5rem;
-    padding-bottom: 1.5rem;
-    background-color: #ffffff;
-}
-
 p,
 a {
     margin-top: 0;
@@ -211,11 +206,18 @@ h4 {
     font-weight: 400;
     line-height: 1.53;
     text-transform: uppercase;
-    letter-spacing: 0.234rem;
+    letter-spacing: 0.07488em;
 }
 
 /* Services */
-.services-item {
+.services {
+    padding-top: 7.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #ffffff;
+    color: #181a1f;
+}
+
+.services-item{
     width: 4.813rem;
     height: 4.813rem;
     margin-bottom: 1.8rem;
@@ -224,26 +226,34 @@ h4 {
     background-repeat: no-repeat;
     background-position: 50%;
 }
+/* 
+.services-item::before{
+    content:url("pencil-black.svg");
+    display: block;
+    width: 4.813rem;
+    height: 4.813rem;
+    margin-bottom: 1.8rem;
+    background-color: #ffda00;
+} */
 
-.services-design {
+.services-item-design {
     background-image: url("pencil-black.svg");
 }
 
-.services-coding {
+.services-item-coding {
     background-image: url("plug.svg");
 }
 
-.services-apps {
+.services-item-apps {
     background-image: url("screen.svg");
 }
 
-.services p {
+.services-text {
     /*width: 22.75rem;*/
-    color: #181a1f;
-    background-color: #ffffff;
-    font-weight: 400;
     /* Text style for "Soluta con" */
-    letter-spacing: 0.071rem;
+/*     letter-spacing: 0.071rem; */
+    letter-spacing: 0.05325em;
+
 }
 
 
@@ -277,7 +287,7 @@ h4 {
     color: #ffdb00;
     background-color: #17191e;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.075em;
 }
 
 .stats-item {
@@ -365,7 +375,7 @@ h4 {
     color: #181a1f;
     background-color: #ffda00;
     font-size: 1.875rem;
-    letter-spacing: 0.141rem;
+    letter-spacing: 0.0752em;
     text-transform: none;
 }
 
@@ -380,7 +390,6 @@ h4 {
     color: #181a1f;
     background-color: #ffda00;
     line-height: 1.8;
-    letter-spacing: 0.094rem;
 }
 
 @media (min-width: 900px) {
