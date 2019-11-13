@@ -21,7 +21,7 @@ p {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25;
-    letter-spacing: 0.0752em;
+    letter-spacing: 0.075em;
 }
 
 p,
@@ -36,7 +36,7 @@ h4 {
     font-size: 3.125rem;
     line-height: 1.53;
     text-transform: uppercase;
-    letter-spacing: 0.07488em;
+    letter-spacing: 0.075em;
 }
 
 /*  .all {
@@ -71,7 +71,7 @@ button {
     padding: 1.5rem 2rem;
     text-align: center;
     font-size: 1.063rem;
-    letter-spacing: 0.0743em;
+    letter-spacing: 0.075em;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ffffff;
@@ -362,7 +362,7 @@ button {
     color: #181a1f;
     background-color: #ffda00;
     font-size: 1.875rem;
-    letter-spacing: 0.0752em;
+    letter-spacing: 0.075em;
     text-transform: none;
 }
 
