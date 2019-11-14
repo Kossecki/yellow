@@ -15,26 +15,30 @@ body {
     background-color: #ffffff;
 }
 
-p,
-a {
+p {
     margin-top: 0;
     margin-bottom: 0;
-    color: #181a1f;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25;
-    letter-spacing: 0.0752em;
+    letter-spacing: 0.075em;
 }
 
-h4 {
+p,
+a {
+    color: #181a1f;
+}
+
+.subheading {
     margin-top: 0;
     margin-bottom: 1.7rem;
     color: #ffdb00;
     font-size: 3.125rem;
     line-height: 1.53;
     text-transform: uppercase;
-    letter-spacing: 0.07488em;
+    letter-spacing: 0.075em;
 }
+
 /*  .all {
   background-image: url("tmp/Montreal_design_grid.png");
   background-position-x: 50%;
@@ -67,7 +71,7 @@ button {
     padding: 1.5rem 2rem;
     text-align: center;
     font-size: 1.063rem;
-    letter-spacing: 0.0743em;
+    letter-spacing: 0.075em;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ffffff;
@@ -208,7 +212,6 @@ button {
     margin-left: auto;
 }
 
-
 /* Services */
 .services {
     padding-top: 7.5rem;
@@ -217,7 +220,9 @@ button {
     color: #181a1f;
 }
 
-.services-item{
+.services-item::before {
+    content: " ";
+    display: block;
     width: 4.813rem;
     height: 4.813rem;
     margin-bottom: 1.8rem;
@@ -226,36 +231,22 @@ button {
     background-repeat: no-repeat;
     background-position: 50%;
 }
-/* 
-.services-item::before{
-    content:url("pencil-black.svg");
-    display: block;
-    width: 4.813rem;
-    height: 4.813rem;
-    margin-bottom: 1.8rem;
-    background-color: #ffda00;
-} */
 
-.services-item-design {
+.services-item-design::before {
     background-image: url("pencil-black.svg");
 }
 
-.services-item-coding {
+.services-item-coding::before {
     background-image: url("plug.svg");
 }
 
-.services-item-apps {
+.services-item-apps::before {
     background-image: url("screen.svg");
 }
 
 .services-text {
-    /*width: 22.75rem;*/
-    /* Text style for "Soluta con" */
-/*     letter-spacing: 0.071rem; */
     letter-spacing: 0.05325em;
-
 }
-
 
 /* Statistics */
 .stats,
@@ -316,16 +307,15 @@ button {
 .portfolio {
     margin-top: 6.4rem;
 }
+
 .portfolio-navigation {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 6.5rem;
-    margin-bottom: 6.5rem;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin: 6.5rem -15px;
     padding: 0;
 }
+
 .portfolio-navigation-item {
     display: block;
     margin: 0.5rem;
@@ -335,7 +325,6 @@ button {
 
 .portfolio-navigation-link {
     display: block;
-    padding: 0.5rem 2.5rem;
     padding: 0.5rem 2.5rem;
     border: 2px solid #ffda00;
     text-decoration: none;
@@ -360,29 +349,28 @@ button {
 }
 
 @media (min-width: 900px) {
-.project-image {
-    display: block;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .project-image {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .project-title {
     color: #181a1f;
     background-color: #ffda00;
     font-size: 1.875rem;
-    letter-spacing: 0.0752em;
+    letter-spacing: 0.075em;
     text-transform: none;
 }
-
 
 .project-link {
     display: block;
     margin-top: 3rem;
     padding: 0.5rem 2.2rem;
-    border: 1px solid#ffffff;
+    border: 1px solid #ffffff;
     width: 11rem;
     text-align: center;
     text-decoration: none;
@@ -390,7 +378,7 @@ button {
 }
 
 @media (min-width: 900px) {
-    .project-grid {
+    .project-list-item {
         display: grid;
         grid-template-columns: 13fr 13fr 5fr 6fr 13fr;
         grid-template-rows: 1fr 1fr;
@@ -399,6 +387,7 @@ button {
     .project-description {
         grid-area: 1 / 2 / 2 / 4;
     }
+
     .project-one {
         grid-area: 1 / 1 / 3 / 2;
     }
@@ -430,7 +419,6 @@ button {
     margin: 2rem;
 }
 
-
 /*Contact section*/
 
 .contact {
@@ -444,6 +432,7 @@ button {
     margin-top: 6rem;
     margin-bottom: 3rem;
 }
+
 @media (min-width: 600px) {
     .contact-form {
         display: flex;
@@ -455,10 +444,12 @@ button {
     display: block;
     width: 100%;
 }
+
 @media (min-width: 700px) {
     .contact-form-user {
         display: flex;
     }
+
     .contact-form-user :first-child {
         padding-inline-end: 1rem;
     }
@@ -487,8 +478,7 @@ button {
     }
 }
 
-
-.contact-form-label{
+.contact-form-label {
     margin-bottom: 0.5rem;
 }
 
@@ -511,7 +501,6 @@ textarea {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
-
 
 .contact-options-card {
     display: flex;
