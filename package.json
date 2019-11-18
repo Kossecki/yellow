@@ -1,0 +1,25 @@
+{
+  "name": "yellow",
+  "version": "1.0.0",
+  "description": "Yellow is a single webpage written in HTML and CSS with responsive design, using icons from the library Font Awesome, which is modelled after a [PSD file template](https://www.graphberry.com/item/montreal-creative-portfolio-theme).",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "prettier": "1.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kossecki/yellow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kossecki/yellow/issues"
+  },
+  "homepage": "https://github.com/Kossecki/yellow#readme"
+}
