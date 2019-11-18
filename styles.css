@@ -10,6 +10,33 @@ html {
 
 body {
     font-family: "Abel", sans-serif;
+    font-weight: 400;
+    color: #17191e;
+    background-color: #ffffff;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.075em;
+}
+
+p,
+a {
+    color: #181a1f;
+}
+
+.subheading {
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+    color: #ffdb00;
+    font-size: 3.125rem;
+    line-height: 1.53;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
 }
 
 /*  .all {
@@ -44,7 +71,7 @@ button {
     padding: 1.5rem 2rem;
     text-align: center;
     font-size: 1.063rem;
-    letter-spacing: 0.079rem;
+    letter-spacing: 0.075em;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ffffff;
@@ -88,7 +115,6 @@ button {
     font-size: 5rem;
     font-weight: 300;
     color: #ffda00;
-    background-color: #17191e;
     text-transform: uppercase;
     line-height: 1.05;
     letter-spacing: 0.085em;
@@ -186,36 +212,17 @@ button {
     margin-left: auto;
 }
 
+/* Services */
 .services {
     padding-top: 7.5rem;
     padding-bottom: 1.5rem;
     background-color: #ffffff;
-}
-
-p,
-a {
-    margin-top: 0;
-    margin-bottom: 0;
     color: #181a1f;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0.0752em;
 }
 
-h4 {
-    margin-top: 0;
-    margin-bottom: 1.7rem;
-    color: #ffdb00;
-    font-size: 3.125rem;
-    font-weight: 400;
-    line-height: 1.53;
-    text-transform: uppercase;
-    letter-spacing: 0.234rem;
-}
-
-/* Services */
-.services-item {
+.services-item::before {
+    content: " ";
+    display: block;
     width: 4.813rem;
     height: 4.813rem;
     margin-bottom: 1.8rem;
@@ -225,32 +232,27 @@ h4 {
     background-position: 50%;
 }
 
-.services-design {
+.services-item-design::before {
     background-image: url("pencil-black.svg");
 }
 
-.services-coding {
+.services-item-coding::before {
     background-image: url("plug.svg");
 }
 
-.services-apps {
+.services-item-apps::before {
     background-image: url("screen.svg");
 }
 
-.services p {
-    /*width: 22.75rem;*/
-    color: #181a1f;
-    background-color: #ffffff;
-    font-weight: 400;
-    /* Text style for "Soluta con" */
-    letter-spacing: 0.071rem;
+.services-text {
+    letter-spacing: 0.05325em;
 }
-
 
 /* Statistics */
 .stats,
 .clients {
     background-color: #17191e;
+    color: #ffffff;
     padding: 5rem 0 0;
 }
 
@@ -266,8 +268,6 @@ h4 {
 .stats-number {
     display: block;
     margin-bottom: 2.4rem;
-    color: #ffffff;
-    background-color: #17191e;
     font-size: 3.75rem;
     font-weight: 400;
 }
@@ -275,9 +275,8 @@ h4 {
 .stats-text {
     font-size: 1.25rem;
     color: #ffdb00;
-    background-color: #17191e;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.075em;
 }
 
 .stats-item {
@@ -308,16 +307,15 @@ h4 {
 .portfolio {
     margin-top: 6.4rem;
 }
+
 .portfolio-navigation {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 6.5rem;
-    margin-bottom: 6.5rem;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin: 6.5rem -15px;
     padding: 0;
 }
+
 .portfolio-navigation-item {
     display: block;
     margin: 0.5rem;
@@ -327,7 +325,6 @@ h4 {
 
 .portfolio-navigation-link {
     display: block;
-    padding: 0.5rem 2.5rem;
     padding: 0.5rem 2.5rem;
     border: 2px solid #ffda00;
     text-decoration: none;
@@ -352,20 +349,20 @@ h4 {
 }
 
 @media (min-width: 900px) {
-.project-image {
-    display: block;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .project-image {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .project-title {
     color: #181a1f;
     background-color: #ffda00;
     font-size: 1.875rem;
-    letter-spacing: 0.141rem;
+    letter-spacing: 0.075em;
     text-transform: none;
 }
 
@@ -373,18 +370,15 @@ h4 {
     display: block;
     margin-top: 3rem;
     padding: 0.5rem 2.2rem;
-    border: 1px solid#ffffff;
+    border: 1px solid #ffffff;
     width: 11rem;
     text-align: center;
     text-decoration: none;
-    color: #181a1f;
-    background-color: #ffda00;
     line-height: 1.8;
-    letter-spacing: 0.094rem;
 }
 
 @media (min-width: 900px) {
-    .project-grid {
+    .project-list-item {
         display: grid;
         grid-template-columns: 13fr 13fr 5fr 6fr 13fr;
         grid-template-rows: 1fr 1fr;
@@ -392,8 +386,8 @@ h4 {
 
     .project-description {
         grid-area: 1 / 2 / 2 / 4;
-        background-color: #ffda00;
     }
+
     .project-one {
         grid-area: 1 / 1 / 3 / 2;
     }
@@ -425,7 +419,6 @@ h4 {
     margin: 2rem;
 }
 
-
 /*Contact section*/
 
 .contact {
@@ -439,6 +432,7 @@ h4 {
     margin-top: 6rem;
     margin-bottom: 3rem;
 }
+
 @media (min-width: 600px) {
     .contact-form {
         display: flex;
@@ -450,10 +444,12 @@ h4 {
     display: block;
     width: 100%;
 }
+
 @media (min-width: 700px) {
     .contact-form-user {
         display: flex;
     }
+
     .contact-form-user :first-child {
         padding-inline-end: 1rem;
     }
@@ -464,26 +460,25 @@ h4 {
     margin-bottom: 1rem;
 }
 
-label,
-input,
-textarea {
+.contact-form-label,
+.contact-form-input,
+.contact-form-textarea {
     display: block;
     width: 100%;
     font-size: 1.25rem;
 }
 
-textarea {
+.contact-form-textarea {
     height: 40vh;
 }
 
 @media (min-width: 600px) {
-    textarea {
+    .contact-form-textarea {
         height: auto;
     }
 }
 
-
-label {
+.contact-form-label {
     margin-bottom: 0.5rem;
 }
 
@@ -506,7 +501,6 @@ textarea {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
-
 
 .contact-options-card {
     display: flex;
@@ -566,7 +560,6 @@ textarea {
     margin: 0 0.35rem 1rem;
     width: 2.4rem;
     color: white;
-    background-color: #17191e;
     font-size: 1.2rem;
 }
 
@@ -581,4 +574,19 @@ textarea {
 
 .text-white {
     color: #ffffff;
+}
+
+.screen-readers-only {
+    position: absolute;
+    margin: -1px 0 0 -1px;
+    padding: 0;
+    display: block;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    outline: 0;
 }
