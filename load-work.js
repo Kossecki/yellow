@@ -1,11 +1,10 @@
 const button = document.getElementById("load-work");
-const sourceElement = document.getElementById("main");	const originalNode = document.getElementById("article");
-const oldNode = document.getElementById("article");	const projectList = document.querySelector(".project-list");
-const newNode = document.importNode(oldNode, true);	
+const originalNode = document.getElementById("article");
+const projectList = document.querySelector(".project-list");
 
 
-let load = function() {	const loadProject = function() {
-    document.getElementById("article").appendChild(newNode);	    let newNode = originalNode.cloneNode(true);
+const loadProject = function() {
+    let newNode = originalNode.cloneNode(true);
     newNode.id = "";
 
     let newTitle =
@@ -15,7 +14,7 @@ let load = function() {	const loadProject = function() {
     newNode.querySelector(".project-title").innerHTML = newTitle;
 
     projectList.insertBefore(newNode, null);
-};	};
+};
 
 
-button.addEventListener("click", load);	button.addEventListener("click", loadProject);
+button.addEventListener("click", loadProject);
