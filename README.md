@@ -11,4 +11,4 @@ Yellow is a single webpage written in HTML and CSS with responsive design, using
 Install browser sync `npm i browser-sync`
 
 ## Development
-To develop with autoreload run: `npx browser-sync start --server --files "*.*"` (node.js is required)
+To develop with autoreload run: `npm start` 
