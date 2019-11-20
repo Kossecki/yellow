@@ -8,7 +8,7 @@ Yellow is a single webpage written in HTML and CSS with responsive design. It us
 - SVG
 
 ## Installation
-Install browser sync `npm i browser-sync`
+Install with `npm i`
 
 ## Development
 To develop with autoreload run: `npm start` 
