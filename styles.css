@@ -482,8 +482,8 @@ button {
     margin-bottom: 0.5rem;
 }
 
-input,
-textarea {
+.contact-form-input,
+.contact-form-textarea {
     margin-bottom: 1.5rem;
     border: 2px solid #17191e;
     padding: 1rem 1.5rem;
